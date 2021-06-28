@@ -3,8 +3,6 @@ wrapper
         main-info
         profile-stats
     stats
-        title
-        stats
     friends-list
         firens-card
     transactio-nhistory
