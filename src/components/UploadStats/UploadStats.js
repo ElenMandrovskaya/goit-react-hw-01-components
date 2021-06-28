@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Statistics, UploadStatsTitle, UploadStatsList, UploadStatsItem, UploadStatsLabel, UploadStatsPercentage } from './UploadStats.styles';
 import statisticalData from '../../data/statistical-data.json'
 
@@ -17,6 +18,10 @@ export default function UploadStats() {
             </UploadStatsList>
         </Statistics>
     );
-         
-
-}
+};
+UploadStats.propTypes = {
+    id: PropTypes.node,
+    label: PropTypes.node,
+    percentage: PropTypes.number,
+    color: PropTypes.node,
+};

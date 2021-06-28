@@ -1,7 +1,6 @@
+import PropTypes from 'prop-types';
 import transactions from "../../data/transactions.json";
-// import { randomBgColor } from "../../utils/randomBgColor";
-import { TransactionsTable, TransactionsHead, TransactionsTr, TransactionsTh, TransactionsBody
-} from "./Transactions.styles";
+import { TransactionsTable, TransactionsHead, TransactionsTr, TransactionsTh, TransactionsBody } from "./Transactions.styles";
 
 export default function Transactions() {
   return (
@@ -24,4 +23,11 @@ export default function Transactions() {
       </TransactionsBody>
     </TransactionsTable>
   );
-}
+};
+
+Transactions.propTypes = {
+  id: PropTypes.node,
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
+};

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Friendslist, FriendsCard, Online, Offline, FriendAvatar, FriendName } from './FriendsList.styles';
 import friends from '../../data/friends.json';
 
@@ -16,4 +17,10 @@ export default function FriendsList() {
         ))}
       </Friendslist>
   );
-}
+};
+FriendsList.propTypes = {
+  id: PropTypes.number,
+  avatar: PropTypes.node,
+  isOnline: PropTypes.bool,
+  name: PropTypes.string,
+};

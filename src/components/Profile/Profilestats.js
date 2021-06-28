@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Statslist, Statsitem, Statslabel, Statsquantity } from './Profilestats.styles';
 import { statsConfig } from '../../utils/statsConfig'
 
@@ -12,4 +13,8 @@ export default function Profilestats() {
         ))}
       </Statslist>
   );
-}
+};
+Profilestats.propTypes = {
+  label: PropTypes.string,
+  quantity: PropTypes.number,
+};
