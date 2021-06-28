@@ -10,7 +10,7 @@ export const Profiledesc = styled.div`
     padding: 20px;`
     ;
 export const Profileimage = styled.img`
-    width: 80px;
+    width: 100px;
     border-radius: 50%;`
     ;
 export const Profilename = styled.p``;
