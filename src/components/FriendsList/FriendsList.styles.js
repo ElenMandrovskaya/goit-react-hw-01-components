@@ -5,9 +5,9 @@ export const Friendslist = styled.ul`
     flex-direction: column;
     align-items: center;
     list-style: none; 
-    margin: 0;
+    margin: 20px;
     padding: 0;
-    width: 400px;
+    width: 30%;
 `
     ;
 export const FriendsCard = styled.li`
@@ -15,7 +15,6 @@ export const FriendsCard = styled.li`
     align-items: flex-start;
     background-color: #fff;
     width: 330px;
-    height: 80px;
     margin-bottom: 10px;
     box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
     padding: 20px;

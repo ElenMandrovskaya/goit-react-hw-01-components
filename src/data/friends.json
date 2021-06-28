@@ -28,5 +28,23 @@
     "name": "Poly",
     "isOnline": false,
     "id": 1284
+  },
+  {
+    "avatar": "https://www.flaticon.com/svg/static/icons/svg/1623/1623681.svg",
+    "name": "Molly",
+    "isOnline": true,
+    "id": 1285
+  },
+  {
+    "avatar": "https://www.flaticon.com/svg/static/icons/svg/763/763704.svg",
+    "name": "Richard",
+    "isOnline": true,
+    "id": 1286
+  },
+  {
+    "avatar": "https://www.flaticon.com/svg/static/icons/svg/1998/1998671.svg",
+    "name": "Emma",
+    "isOnline": false,
+    "id": 1287
   }
 ]

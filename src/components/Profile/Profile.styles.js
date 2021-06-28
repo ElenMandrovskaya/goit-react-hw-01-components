@@ -1,9 +1,12 @@
 import styled from '@emotion/styled';
 
 export const Profileinfo = styled.div`
-    width: 250px;
+    width: 20%;
+    height: 30%;
     background-color: #f5f5f5;
-    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);`
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    margin: 20px;
+    `
     ;
 export const Profiledesc = styled.div`
     background-color: #fff;
