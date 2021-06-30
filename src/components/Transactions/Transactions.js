@@ -1,8 +1,15 @@
 import PropTypes from 'prop-types';
-import transactions from "../../data/transactions.json";
-import { TransactionsTable, TransactionsHead, TransactionsTr, TransactionsTh, TransactionsBody } from "./Transactions.styles";
+import {
+  TransactionsTable,
+  TransactionsHead,
+  TransactionsTr,
+  TransactionsTh,
+  TransactionsBody,
+} from './Transactions.styles';
 
-export default function Transactions() {
+// import transactions from "../../data/transactions.json";
+
+export default function Transactions({ transactions }) {
   return (
     <TransactionsTable>
       <TransactionsHead>
@@ -23,11 +30,15 @@ export default function Transactions() {
       </TransactionsBody>
     </TransactionsTable>
   );
-};
+}
 
 Transactions.propTypes = {
-  id: PropTypes.node,
-  type: PropTypes.string,
-  amount: PropTypes.number,
-  currency: PropTypes.string,
+  transactions: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    }),
+  ),
 };
