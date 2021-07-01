@@ -12,7 +12,7 @@ import {
 export default function UploadStats({ title, stats }) {
   return (
     <Statistics>
-      <UploadStatsTitle>{title}</UploadStatsTitle>
+      {title && <UploadStatsTitle>{title}</UploadStatsTitle>}
       <UploadStatsList>
         {stats.map(({ id, label, percentage, color }) => (
           <UploadStatsItem key={id} style={{ backgroundColor: color }}>
